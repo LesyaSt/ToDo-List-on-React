@@ -33,6 +33,19 @@
 .input .list-todo .list-task {
   height: 300px;
 }
+.input .list-todo .list-task .chalenge {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.input .list-todo .list-task .chalenge .check {
+  border: solid 2px hsl(235, 19%, 35%);
+  background: none;
+  border-radius: 50%;
+  height: 25px;
+  width: 30px;
+  margin-left: 20px;
+}
 .input .list-todo .list-task .task-btn {
   width: 100%;
   display: flex;
