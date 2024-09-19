@@ -1,0 +1,113 @@
+$VeryDarkGrayishBlue: hsl(235, 19%, 35%);
+$VeryDarkDesaturatedBlue: hsl(235, 24%, 19%);
+
+.input {
+    // background-color: pink;
+    position: relative;
+    width: 100%;
+    top: 20px;
+   
+
+.createInput {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 5px;
+    background-color: $VeryDarkDesaturatedBlue;
+
+.check {
+    background: none;
+    border: solid 2px $VeryDarkGrayishBlue;
+    border-radius: 50%;
+    height: 25px;
+    width: 30px;
+    margin: 10px 20px;
+    
+
+}
+
+    .inputText{
+        width: 100%;
+        height: 50px;
+        border: none;
+        background: none;
+        // border-radius: 5px;
+        // background-color: $VeryDarkDesaturatedBlue;
+    }
+}
+
+
+    .list-todo {
+        background-color: $VeryDarkDesaturatedBlue;
+        border-radius: 5px;
+        margin-top: 20px;
+        height: 100%;
+
+.list-task {
+height: 300px;
+
+        .task {
+width: 100%;
+height: 50px;
+background-color: $VeryDarkDesaturatedBlue;
+border: none;
+border-radius: 5px;
+        }
+    }
+    
+    }
+
+    .clear {
+        width: 100%;
+        margin-top: 20px;
+        height: 50px;
+        border-radius: 5px;
+
+        display: flex;
+        justify-content: space-between;
+
+        background-color: $VeryDarkDesaturatedBlue;
+    .btn-item {
+        border: none;
+        background: none;
+        color: $VeryDarkGrayishBlue;
+    }
+
+    .btn-clear {
+        border: none;
+        background: none;
+        color: $VeryDarkGrayishBlue;
+    }
+    
+    }
+
+    .select {
+        background-color: $VeryDarkDesaturatedBlue;
+        
+        display: flex;
+        justify-content: space-evenly;
+
+        margin-top: 20px;
+        height: 50px;
+
+        border-radius: 5px;
+
+        .btn-all {
+            background: none;
+            border: none;
+            color: $VeryDarkGrayishBlue;
+        }
+
+        .btn-active {
+            background: none;
+            border: none;
+            color: $VeryDarkGrayishBlue;
+        }
+
+        .btn-completed {
+            background: none;
+            border: none;
+            color: $VeryDarkGrayishBlue;
+        }
+    }
+}

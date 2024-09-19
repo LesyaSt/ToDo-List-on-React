@@ -1,0 +1,84 @@
+.input {
+  position: relative;
+  width: 100%;
+  top: 20px;
+}
+.input .createInput {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 5px;
+  background-color: hsl(235, 24%, 19%);
+}
+.input .createInput .check {
+  background: none;
+  border: solid 2px hsl(235, 19%, 35%);
+  border-radius: 50%;
+  height: 25px;
+  width: 30px;
+  margin: 10px 20px;
+}
+.input .createInput .inputText {
+  width: 100%;
+  height: 50px;
+  border: none;
+  background: none;
+}
+.input .list-todo {
+  background-color: hsl(235, 24%, 19%);
+  border-radius: 5px;
+  margin-top: 20px;
+  height: 100%;
+}
+.input .list-todo .list-task {
+  height: 300px;
+}
+.input .list-todo .list-task .task {
+  width: 100%;
+  height: 50px;
+  background-color: hsl(235, 24%, 19%);
+  border: none;
+  border-radius: 5px;
+}
+.input .clear {
+  width: 100%;
+  margin-top: 20px;
+  height: 50px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  background-color: hsl(235, 24%, 19%);
+}
+.input .clear .btn-item {
+  border: none;
+  background: none;
+  color: hsl(235, 19%, 35%);
+}
+.input .clear .btn-clear {
+  border: none;
+  background: none;
+  color: hsl(235, 19%, 35%);
+}
+.input .select {
+  background-color: hsl(235, 24%, 19%);
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  height: 50px;
+  border-radius: 5px;
+}
+.input .select .btn-all {
+  background: none;
+  border: none;
+  color: hsl(235, 19%, 35%);
+}
+.input .select .btn-active {
+  background: none;
+  border: none;
+  color: hsl(235, 19%, 35%);
+}
+.input .select .btn-completed {
+  background: none;
+  border: none;
+  color: hsl(235, 19%, 35%);
+}/*# sourceMappingURL=inputs.css.map */

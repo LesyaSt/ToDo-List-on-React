@@ -1,3 +1,25 @@
 body {
   width: 100%;
+  color: white;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .todo {
+  font-size: 4vh;
+  letter-spacing: 2vh;
+}
+.header .sun {
+  width: 30px;
+  height: 30px;
+  display: flex;
+}
+.header .moon {
+  width: 30px;
+  height: 30px;
+  display: none;
 }/*# sourceMappingURL=header.css.map */

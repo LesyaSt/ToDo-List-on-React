@@ -1,3 +1,96 @@
+.bg-container {
+  height: 20vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(../images/bg-desktop-dark.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.bg-container .bg-photo {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+body {
+  width: 100%;
+  color: white;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .todo {
+  font-size: 4vh;
+  letter-spacing: 2vh;
+}
+.header .sun {
+  width: 30px;
+  height: 30px;
+  display: flex;
+}
+.header .moon {
+  width: 30px;
+  height: 30px;
+  display: none;
+}
+
+.input {
+  position: relative;
+  width: 100%;
+  top: 20px;
+}
+.input .createInput {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 5px;
+  background-color: hsl(235, 24%, 19%);
+}
+.input .createInput .check {
+  background: none;
+  border: solid 2px hsl(235, 19%, 35%);
+  border-radius: 50%;
+  height: 25px;
+  width: 30px;
+  margin: 10px 20px;
+}
+.input .createInput .inputText {
+  width: 100%;
+  height: 50px;
+  border: none;
+  background: none;
+}
+.input .list-todo {
+  background-color: hsl(235, 24%, 19%);
+  border-radius: 5px;
+  margin-top: 20px;
+  height: 100%;
+}
+.input .list-todo .list-task .task {
+  width: 100%;
+  height: 50px;
+  background-color: hsl(235, 24%, 19%);
+  border: none;
+  border-radius: 5px;
+}
+.input .list-todo .list-task .task .hr {
+  height: 2px;
+}
+
+.container {
+  background-color: red;
+  width: 85%;
+  position: absolute;
+  top: 5vh;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
