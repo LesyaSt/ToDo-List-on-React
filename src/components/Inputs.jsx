@@ -22,17 +22,7 @@ function Inputs() {
 
       <div className="list-todo">
             <div className="list-task">
-                <div className="chalenge">
-            <button className="check">
-            <img src={check} alt="" srcset="" />
-            </button>
-                
-                    <button className="task-btn">
-
-                    <input type="text" className="task" readOnly value="text"/>
-                    <img src={cross} alt="" />
-                    </button>
-                </div>
+          
                 <hr  className="hr"  />
                 
             </div>

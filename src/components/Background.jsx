@@ -1,6 +1,6 @@
 import React from 'react';
 
-import desktopDark from '../images/bg-desktop-dark.jpg';
+// import desktopDark from '../images/bg-desktop-dark.jpg';
 
 import Container from './Container';
 
