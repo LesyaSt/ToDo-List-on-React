@@ -1,8 +1,21 @@
 .container {
-    background-color: red; 
+    // background-color: red; 
     width: 85%;
     position: absolute;
 
     top: 5vh;
 }
 
+@media screen and (min-width: 1024px) {
+    .container {
+       
+        width: 500px;
+}
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+       
+        width: 85%;
+    }
+}

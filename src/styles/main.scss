@@ -7,8 +7,11 @@
  box-sizing: border-box;
  margin: 0;
  padding: 0;
+ font-family: "Josefin Sans";
 }
 $BrightBlue: hsl(220, 98%, 61%);
+$LightBlue: #8FC9FF;
+
 
 // Light Theme
 
@@ -34,7 +37,4 @@ $VeryDarkGrayishBlue: hsl(237, 14%, 26%);
 background-color: $VeryDarkBlue;
     }
     
-    .bg-photo {
-        width: 100%;
-        height: 700px;
-    }
+   

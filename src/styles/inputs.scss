@@ -1,6 +1,7 @@
 $VeryDarkGrayishBlue: hsl(235, 19%, 35%);
 $VeryDarkDesaturatedBlue: hsl(235, 24%, 19%);
-
+$BrightBlue: hsl(220, 98%, 61%);
+  // Кінцевий колір
 .input {
   // background-color: pink;
   position: relative;
@@ -28,8 +29,13 @@ $VeryDarkDesaturatedBlue: hsl(235, 24%, 19%);
       height: 50px;
       border: none;
       background: none;
-      // border-radius: 5px;
-      // background-color: $VeryDarkDesaturatedBlue;
+      // padding-left: 10px;
+      color: hsl(234, 39%, 85%);
+      caret-color: $BrightBlue;
+
+      &:focus {
+        outline: none;
+      }
     }
   }
 
@@ -38,10 +44,76 @@ $VeryDarkDesaturatedBlue: hsl(235, 24%, 19%);
     border-radius: 5px;
     margin-top: 20px;
     height: 100%;
+   
+    
+
+.noTask {
+  // background-color: aqua;
+  height: 50px;
+  display: flex;
+margin-left: 20px;
+  align-items: center;
+  color: $VeryDarkGrayishBlue;
+}
 
     .list-task {
-      height: 300px;
+      height: 100%;
+      display: flex;
+      // justify-content: space-evenly;
+      align-items: center;
+      margin: 10px;
 
+.list {
+  display: flex;
+  height: 50px;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 10px 0 10px;
+  
+}
+.cross {
+  width: 30px;
+  height: 30px;
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  &:hover {
+    cursor: pointer;
+  }
+}
+      .done {
+        background: none;
+        border: 2px solid $VeryDarkGrayishBlue;
+        border-radius: 50%;
+        width: 28px;
+        height: 25px;
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 0;
+   
+    &:hover {
+border: 2px solid #8FC9FF;
+transition: .2s;
+
+
+   }
+  
+      }
+      .completed {
+        background: #8FC9FF; // Фон, коли завдання виконано
+        border: 2px solid #8FC9FF; // Бордер, коли завдання виконано
+      }
+      .span {
+        width: 100%;
+        padding-left: 10px;
+        
+      }
+
+    
     }
   }
 
@@ -53,18 +125,33 @@ $VeryDarkDesaturatedBlue: hsl(235, 24%, 19%);
 
     display: flex;
     justify-content: space-between;
+    padding: 0 15px 0 15px;
 
     background-color: $VeryDarkDesaturatedBlue;
     .btn-item {
       border: none;
       background: none;
       color: $VeryDarkGrayishBlue;
+    &:hover{
+     color: hsl(236, 9%, 61%); 
+     cursor: pointer;
+    }
+    &:focus {
+      color: $BrightBlue;
+    }
     }
 
     .btn-clear {
       border: none;
       background: none;
       color: $VeryDarkGrayishBlue;
+      &:hover{
+        color: hsl(236, 9%, 61%); 
+        cursor: pointer;
+       }
+       &:focus {
+        color: $BrightBlue;
+      }
     }
   }
 
@@ -79,22 +166,26 @@ $VeryDarkDesaturatedBlue: hsl(235, 24%, 19%);
 
     border-radius: 5px;
 
-    .btn-all {
+    & button {
       background: none;
       border: none;
-      color: $VeryDarkGrayishBlue;
+      color: $VeryDarkGrayishBlue; // базовий колір тексту
+      cursor: pointer;
+      padding: 10px;
+      margin: 0 5px;
+      border-radius: 5px;
+      transition: color .2s, border-bottom 0.3s;
+    
+      &.active {
+        color: $BrightBlue; // колір для активної кнопки
+        // border-bottom: 2px solid $BrightBlue; // підкреслення активної кнопки
+      }
+    
+      &:hover {
+        color: hsl(236, 9%, 61%); // колір тексту при наведенні
+      }
     }
-
-    .btn-active {
-      background: none;
-      border: none;
-      color: $VeryDarkGrayishBlue;
-    }
-
-    .btn-completed {
-      background: none;
-      border: none;
-      color: $VeryDarkGrayishBlue;
-    }
+   
   }
+  
 }

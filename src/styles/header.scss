@@ -1,40 +1,42 @@
 body {
-    // background-color: red;
-    width: 100%;
-    color: white;
-};
-
-.header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    // background-color: red;
-    align-items: center;
-// margin-top: 20px;
-
-    .todo {
-        // margin: 20px;
-        // padding: 10px;
-        
-        font-size: 4vh;
-        // background-color: blue;
-
-        letter-spacing: 2vh;
-    }
-    .sun {
-        width: 30px;
-        height: 30px;
-
-        // background-color: blue;
-        
-        display: flex;
-    }
-
-    .moon {
-        width: 30px;
-        height: 30px;
-        display: none;
-    }
+  // background-color: red;
+  width: 100%;
+  color: white;
 }
 
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  // background-color: yellow;
+  background: none;
+  width: 500px;
+  
+  .todo {
+   
+    font-family: "Josefin Sans";
+    font-size: 5vh;
+    padding-top: 1vh;
+    // background-color: blue;
 
+    letter-spacing: 2vh;
+  }
+
+  .btn-theme-toggle {
+    background: none;
+    border: none;
+    // margin: 10px 10px 0 0;
+    display: flex;
+    padding: 1vh;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .header {
+      // background-color: blue;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+  }
+}
