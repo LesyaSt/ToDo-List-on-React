@@ -85,7 +85,7 @@ function Inputs({ theme }) {
           getFilteredTasks().map((task, index) => (
             <div className="list-task" key={index}>
               <button
-               className={`done ${task.completed ? 'completed' : ''}`}
+               className='done'
                 // className="done"
                 onClick={() => toggleCompletion(index)}
               >
@@ -137,4 +137,4 @@ function Inputs({ theme }) {
   );
 }
 
-export default Inputs;
+export default Inputs; 

@@ -31,6 +31,14 @@ body {
   }
 }
 
+.light-theme {
+  background-color: hsl(236, 33%, 92%);
+}
+
+.dark-theme {
+  background-color: hsl(235, 21%, 11%);
+}
+
 @media screen and (max-width: 1024px) {
   .header {
       // background-color: blue;

@@ -8,20 +8,24 @@ import moon from '../images/icon-moon.svg';
 
 function Header({ theme, toggleTheme }) {
   useEffect(() => {
-    document.body.style.backgroundColor = theme === 'light' ? 'hsl(236, 33%, 92%)' : 'hsl(235, 21%, 11%)'; // Світлий та темний фон
-}, [theme]);
+    document.body.classList.toggle('light-theme', theme === 'light');
+    document.body.classList.toggle('dark-theme', theme === 'dark');
+  }, [theme]);
+  
 
     return (
-        <div className='header'>
+        <header className='header'>
             <h1 className='todo'>TODO</h1>
-            <button className='btn-theme-toggle' onClick={toggleTheme}>
-        {theme === 'light' ? (
-          <img src={moon} alt="Switch to dark theme" />
-        ) : (
-          <img src={sun} alt="Switch to light theme" />
-        )}
+            <button className='btn-theme-toggle'
+                    onClick={toggleTheme}
+                    aria-label={`Switch to ${theme === 'light' ? 'dark' : 'light'} theme`}
+                    >
+        <img
+    src={theme === 'light' ? moon : sun}
+    alt={`Switch to ${theme === 'light' ? 'dark' : 'light'} theme`}
+  />
       </button>
-        </div>
+        </header>
     );
 }
 
